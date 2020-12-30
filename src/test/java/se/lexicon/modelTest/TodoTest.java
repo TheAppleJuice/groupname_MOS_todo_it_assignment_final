@@ -6,7 +6,7 @@ import org.junit.Test;
 import se.lexicon.model.Person;
 import se.lexicon.model.Todo;
 
-public class TodoTest<Public> {
+public class TodoTest {
     private Todo testTodo1;
     private Todo testTodo2;
 
@@ -15,7 +15,7 @@ public class TodoTest<Public> {
 
         //Testing constructor "public Todo(){}"
         testTodo1 = new Todo();
-        testTodo1.getTODOID();
+        //testTodo1.getTODOID();
         testTodo1.setDescription("Description1");
         testTodo1.setDone(false);
 
@@ -27,7 +27,10 @@ public class TodoTest<Public> {
 
         //Testing constructor "public Todo(int TODOID, String description){}"
         testTodo2 = new Todo("Description2");
+
     }
+
+
 
     @Test
     public void testTODOID1() {
@@ -36,6 +39,18 @@ public class TodoTest<Public> {
         Assert.assertEquals(expectedTODOID1, actualTODOID1);
     }
 
+    @Test
+    public void testTodo1Assignee1(){
+        Person personExpectedResult = new Person();
+        personExpectedResult.setFirstName("Sebastian");
+        personExpectedResult.setLastName("Bocaciu");
+
+        Person personActualResult = testTodo1.getAssignee();
+        Assert.assertEquals(personExpectedResult.getFirstName(), personActualResult.getFirstName());
+        Assert.assertEquals(personExpectedResult.getLastName(), personActualResult.getLastName());
+
+
+    }
     @Test
     public void testTodo2() {
         String expectedTestTodo2 = "Description2";

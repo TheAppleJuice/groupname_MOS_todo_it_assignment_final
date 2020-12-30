@@ -15,13 +15,13 @@ public class PersonTest {
 
         // Testperson 1
         testPerson1 = new Person();
-        testPerson1.getPERSONID();
+        //testPerson1.getPERSONID();
         testPerson1.setFirstName("Sebastian");
         testPerson1.setLastName("Bocaciu");
 
         // Testperson 2 PERSONID only
         testPerson2 = new Person();
-        testPerson2.getPERSONID();
+        //testPerson2.getPERSONID();
 
 
     }

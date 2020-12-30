@@ -10,6 +10,7 @@ public class Todo {
     private Person assignee;
 
     public Todo() {
+
         this.TODOID = ++sequencerTodoId;
     }
 
