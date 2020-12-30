@@ -1,22 +1,22 @@
 package se.lexicon.model;
 import java.util.Scanner;
+import se.lexicon.data.TodoSequencer;
 
 public class Todo {
-    private final int TODOID;
-    //sequencer for TODOID
-    private static int sequencerTodoId = 0;
+    private int TODOID;
+   // private static int sequencerTodoId = 0;
     private String description;
     private boolean done;
     private Person assignee;
 
     public Todo() {
 
-        this.TODOID = ++sequencerTodoId;
+        TODOID = TodoSequencer.nextTodoId();
     }
 
     public Todo(String description) {
         this.description = description;
-        this.TODOID = ++sequencerTodoId;
+       TODOID = TodoSequencer.nextTodoId();
     }
 
     public int getTODOID() {

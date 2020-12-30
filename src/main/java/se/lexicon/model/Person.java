@@ -1,14 +1,16 @@
 package se.lexicon.model;
 
+import se.lexicon.data.PersonSequencer;
+
 public class Person {
-    private final int PERSONID;
-    //Sequenser for final int PERSONID
-    private static int sequenserPERSONID = 0;
+    private int PERSONID;
+    //private static int sequenserPERSONID = 0;
     private String firstName;
     private String lastName;
 
     public Person() {
-        this.PERSONID = ++sequenserPERSONID;
+        PERSONID = PersonSequencer.nextPersonId();
+       // this.PERSONID = ++sequenserPERSONID;
     }
 
     public int getPERSONID() {
