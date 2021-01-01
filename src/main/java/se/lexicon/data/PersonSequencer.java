@@ -6,4 +6,8 @@ public class PersonSequencer {
     public static int nextPersonId(){
         return ++sequencer;
     }
+
+    public static void reset(int sequencer){
+        sequencer = 0;
+    }
 }

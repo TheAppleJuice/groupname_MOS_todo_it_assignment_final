@@ -3,7 +3,7 @@ import java.util.Scanner;
 import se.lexicon.data.TodoSequencer;
 
 public class Todo {
-    private int TODOID;
+    private final int TODOID;
    // private static int sequencerTodoId = 0;
     private String description;
     private boolean done;

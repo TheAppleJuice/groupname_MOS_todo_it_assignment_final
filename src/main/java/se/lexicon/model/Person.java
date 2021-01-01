@@ -3,7 +3,7 @@ package se.lexicon.model;
 import se.lexicon.data.PersonSequencer;
 
 public class Person {
-    private int PERSONID;
+    private final int PERSONID;
     //private static int sequenserPERSONID = 0;
     private String firstName;
     private String lastName;

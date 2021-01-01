@@ -5,5 +5,10 @@ public class TodoSequencer {
 
     public static int nextTodoId() {
         return ++sequencer;
+
+    }
+    public static void reset(int sequencer){
+        sequencer = 0;
+    }
 }
-}
+
