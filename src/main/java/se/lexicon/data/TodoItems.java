@@ -3,7 +3,7 @@ package se.lexicon.data;
 import se.lexicon.model.Todo;
 
 public class TodoItems {
-    private static Todo[] todoArray= new Todo[0];
+    /*private static Todo[] todoArray= new Todo[0];
 
     public int size() {
         return todoArray.length;
@@ -17,4 +17,6 @@ public class TodoItems {
     public Todo findById(int TODOID) {
         //return ????;
     }
+
+     */
 }

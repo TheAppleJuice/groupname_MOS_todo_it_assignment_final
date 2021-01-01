@@ -9,6 +9,7 @@ public class People {
     }
 
     public Person[] findAll() {
+
         return peopleArray;
     }
 
@@ -28,6 +29,11 @@ public class People {
         Person[] newPeopleArray = Arrays.copyOf(peopleArray, peopleArray.length + 1);
         newPeopleArray[newPeopleArray.length - 1] = newPerson;
         peopleArray = newPeopleArray;
+
+    }
+    public void clear (){
+        peopleArray = null;
+        //Arrays.fill(peopleArray, null);
 
     }
 }
